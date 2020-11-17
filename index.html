@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Password Generator Unit 3</title>
 </head>
 
@@ -26,12 +26,31 @@
             <textarea id="passwordBox" rows="4" placeholder="Your Secure Password"></textarea>
             <div class="row text-center">
                 <div class="col-sm-3 specialChars">
-                    <input type="checkbox"  name="specialChars"checked> !@#$%
+                    <input type="checkbox" name="specialChars" checked> !@#$%
+                </div>
+                <div class="col-sm-3">
+                    <input type="checkbox" name="lwrChars" checked> a-z
+                </div>
+                <div class="col-sm-3">
+                    <input type="checkbox" name="upprChars" checked> A-Z
                 </div>
 
+
+
+
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <button class="passGenButn" onclick="createPassword()">Generate Password</button>
+                </div>
+                <div class="col-md-6">
+                    <button class="clipboardButn" onclick="copyToClipboard()">Copy to Clipboard</button>
+                </div>
             </div>
         </section>
     </div>
+    <script src="assets/psWord.js"></script>
 </body>
 
 </html>
